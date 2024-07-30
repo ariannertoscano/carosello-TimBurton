@@ -1,0 +1,302 @@
+.filmografia-timburton-section {
+  background-color:#592F67;
+  margin: 0;
+  width: 786;
+  height: 1440;
+  align-items: center;
+}
+
+span.opere {
+  color: #FFFFFF;
+}
+
+span.opere {
+  padding: 50px;
+  margin: 0;
+}
+
+.opere h1 {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+
+
+
+#carousel {
+  height: 400px;
+  top: 50%;
+  transform: translateY(-20%);
+  padding: 150px;
+  margin: 0;
+}
+
+#carousel div {
+  position: absolute;
+  transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+  opacity: 10;
+}
+
+#carousel div img {
+  width: 400px;
+  transition: width 400ms;
+   -webkit-user-drag: none;
+   box-shadow: rgba(66, 43, 66, 0.911) 0px 20px 30px -10px;
+}
+ 
+#cards img {
+  object-fit: cover;
+}
+
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+  width: 200px;
+}
+
+#carousel div.hideRight {
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+  width: 200px;
+}
+
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+  width: 300px;
+}
+
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+  width: 300px;
+}
+
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+.button-82-pushable {
+  position: relative;
+  background-color: #ffffff00;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button-82-pushable {
+  padding: 0;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+
+.button-82-pushable {
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 16px 27px;
+  background: #FFFFFF;
+  will-change: transform;
+  transform: translateY(-4px);
+  border-radius: 100%;
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-design {
+  width: 25px;
+  max-width: 25px;
+}
+
+
+.left-arrow {
+  margin: 0, 4px;
+  position: absolute;
+  top: 310px;
+  left: 20px;
+}
+
+.right-arrow {
+  margin: 0, 4px;
+  position: absolute;
+  top: 310px;
+  right: 20px;  
+  max-width: 100%;
+}
+
+.titoli-filmografia {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.titoli {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.titoli-filmografia {
+   font-size: 24px;
+   margin: auto;
+}  
+
+/* RESPONSIVE BOTTONI*/
+
+@media (max-width: 500px) {
+  .button-82-front {
+    padding: 20px 40px;
+  }
+  
+  .cards {
+    position: relative;
+  }
+
+
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+@media (max-width: 600px) {
+
+  #carousel {  
+    margin: auto;
+    position: static;
+    height: 400px;
+  }
+
+  #cards img {
+    display: flex;
+    gap: 0px;
+  }
+
+  #carousel div img {
+    width: 400px;
+    transition: width 400ms;
+     -webkit-user-drag: none;
+     box-shadow: rgba(66, 43, 66, 0.911) 0px 20px 30px -10px;
+  }
+   
+/* BOTTONI GIU'*/
+.left-arrow {
+  position: static;
+  margin: 0;
+}
+
+.right-arrow {
+  position: static;
+  margin: 0;
+}
+
+
+.opere-button {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.button-design {
+  width: 25px;
+  max-width: 25px;
+}
+
+
+.filmografia-timburton-section {
+  margin: auto;
+}
+
+
+
+}
